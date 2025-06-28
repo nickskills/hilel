@@ -3,10 +3,6 @@
 	margin: 0;
 	padding: 0;
 }
-html {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 body {
 	background-color: #efeff2;
 	font: 400 18px/28px Inter, sans-serif;
