@@ -87,6 +87,11 @@ body {
 .header__btn:active {
 	transform: scale(0.98);
 }
+.header__link,
+.header__btn,
+.offer__item {
+	font-family: Inter, sans-serif;
+}
 
 /* offer */
 
