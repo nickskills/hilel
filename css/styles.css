@@ -626,7 +626,6 @@ body {
 	}
 	.btn-box {
 		gap: 28px;
-		align-items: flex-end;
 	}
 	.header__link,
 	.link {
