@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>IT Courses UpDate</title>
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-box">
+					<div class="header-nav">
+						<a class="logo" href="index.html"> <img src="img/logo.svg" alt="logo" />UpDate </a>
+						<nav class="nav">
+							<ul class="nav__list">
+								<li><a class="link" href="#courses">Courses</a></li>
+								<li><a class="link" href="#about">About</a></li>
+								<li><a class="link" href="#contact">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="btn-box">
+						<a class="header__link active" aria-label="Switch to English" href="index.html">En</a>
+						<a class="header__link" aria-label="Switch to Ukrainian" href="index-ua.html">Ua</a>
+					</div>
+					<button class="burger" aria-label="Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<button class="scroll-up" aria-label="Scroll to top">↑</button>
+			</div>
+		</header>
+		<main>
+			<section class="offer">
+				<div class="container">
+					<div class="offer-box">
+						<div class="offer__holder">
+							<h1 class="offer__title">Explore thousands of hands-on creative classes.</h1>
+							<p class="offer__description">Start learning for <a class="offer__free" href="#">free</a></p>
+							<a href="#courses" class="offer__btn">Choose a course</a>
+							<p class="offer__sale">50%</p>
+							<p class="offer__time">
+								<time datetime="17:44:16">24 Days 17:44:16</time>
+							</p>
+						</div>
+						<div class="offer__visual">
+							<img src="img/offer-bg.png" alt="Hero" class="offer__img" />
+							<ul class="offer__list">
+								<li class="offer__marketer offer__item">Marketer</li>
+								<li class="offer__illustrator offer__item">Illustrator</li>
+								<li class="offer__animator offer__item">Animator</li>
+								<li class="offer__programmer offer__item">Programmer</li>
+								<li class="offer__designer offer__item">Designer</li>
+								<li class="offer__photographer offer__item">Photographer</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="learn" id="about">
+				<div class="container">
+					<div class="learn-box">
+						<div class="learn-text">
+							<h2 class="learn-title">What you will learn</h2>
+							<p class="learn__description">
+								Up-to-date knowledge from recognized market experts for beginners and practitioners
+							</p>
+							<p class="learn__description">
+								On the platform, you can gain knowledge on current topics and in-demand skills. All courses
+								are aimed at practice: we monitor the relevance of the material and help with employment and
+								internship
+							</p>
+						</div>
+						<div class="learn__counters">
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">56</p>
+								<p class="learn__counter-description">Courses</p>
+							</div>
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">108</p>
+								<p class="learn__counter-description">Curators</p>
+							</div>
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">3 723</p>
+								<p class="learn__counter-description">Graduates</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="discover" id="courses">
+				<div class="container">
+					<h2 class="discover__title">Discover Lifelong Learning</h2>
+					<ul class="discover__list">
+						<li><button class="discover__button active" data-category="Popular">Popular</button></li>
+						<li><button class="discover__button" data-category="Animation">Animation</button></li>
+						<li><button class="discover__button" data-category="Design">Design</button></li>
+						<li><button class="discover__button" data-category="Illustration">Illustration</button></li>
+						<li><button class="discover__button" data-category="Programming">Programming</button></li>
+						<li><button class="discover__button" data-category="Photo & Film">Photo & Film</button></li>
+						<li><button class="discover__button" data-category="Marketing">Marketing</button></li>
+					</ul>
+					<div class="discover__cards"></div>
+				</div>
+			</section>
+			<section class="find-program" id="contact">
+				<div class="container">
+					<div class="find-program-box">
+						<div class="find-program__text">
+							<h2 class="find-program__title">Contact Information</h2>
+							<p class="find-program__description">We will help you with the choice!</p>
+						</div>
+						<form action="https://fom.in.ua/echo" class="find-program__form">
+							<input
+								class="find-program__input"
+								type="text"
+								name="name"
+								placeholder="Name"
+								autocomplete="name"
+								required
+							/>
+							<input
+								class="find-program__input"
+								type="email"
+								name="email"
+								placeholder="Email"
+								autocomplete="email"
+								required
+							/>
+							<p>Selected Course</p>
+							<input
+								type="text"
+								name="selected-course"
+								class="find-program__input selected-course"
+								placeholder="Select course"
+								readonly
+								required
+							/>
+							<button class="find-program__button">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-box">
+					<div class="footer__contacts">
+						<a class="footer__logo logo" href="index.html">
+							<img src="img/footer-logo.svg" alt="logo" />UpDate
+						</a>
+						<a class="footer__link" href="mailto:support@update.com">support@update.com</a>
+						<a class="footer__link" href="tel:+12136771024">+1 (213) 677 10 24</a>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">Courses</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">Animation</a></li>
+							<li><a class="sitemap__link" href="#">Design</a></li>
+							<li><a class="sitemap__link" href="#">Illustration</a></li>
+							<li><a class="sitemap__link" href="#">Programming</a></li>
+							<li><a class="sitemap__link" href="#">Photo & Film</a></li>
+							<li><a class="sitemap__link" href="#">Marketing</a></li>
+						</ul>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">Information</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">Blog</a></li>
+							<li><a class="sitemap__link" href="#">About us</a></li>
+							<li><a class="sitemap__link" href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">En</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">English</a></li>
+							<li><a class="sitemap__link" href="ua-translate.html">Ua</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<a class="copyright__policy" href="#">Policy privacy</a>
+					<p class="copyright__text">Copyright 2022. All rights reserved</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

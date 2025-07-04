@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<title>ІТ Курси UpDate</title>
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-box">
+					<div class="header-nav">
+						<a class="logo" href="index-ua.html"> <img src="img/logo.svg" alt="logo" />UpDate </a>
+						<nav class="nav">
+							<ul class="nav__list">
+								<li><a class="link" href="#courses">Курси</a></li>
+								<li><a class="link" href="#about">Про нас</a></li>
+								<li><a class="link" href="#contact">Напишіть нам</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="btn-box">
+						<a class="header__link" aria-label="Switch to English" href="index.html">En</a>
+						<a class="header__link active" aria-label="Switch to Ukrainian" href="index-ua.html">Ua</a>
+					</div>
+					<button class="burger" aria-label="Меню">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<button class="scroll-up" aria-label="Scroll to top">↑</button>
+			</div>
+		</header>
+		<main>
+			<section class="offer">
+				<div class="container">
+					<div class="offer-box">
+						<div class="offer__holder">
+							<h1 class="offer__title">Відкрийте для себе тисячі практичних креативних курсів.</h1>
+							<p class="offer__description">
+								Почніть навчання <a class="offer__free" href="#">безкоштовно</a>
+							</p>
+							<a href="#courses" class="offer__btn">Обрати курс</a>
+							<p class="offer__sale">50%</p>
+							<p class="offer__time">
+								<time datetime="17:44:16">24 дні 17:44:16</time>
+							</p>
+						</div>
+						<div class="offer__visual">
+							<img src="img/offer-bg.png" alt="Головне зображення" class="offer__img" />
+							<ul class="offer__list">
+								<li class="offer__marketer offer__item">Маркетолог</li>
+								<li class="offer__illustrator offer__item">Ілюстратор</li>
+								<li class="offer__animator offer__item">Аніматор</li>
+								<li class="offer__programmer offer__item">Програміст</li>
+								<li class="offer__designer offer__item">Дизайнер</li>
+								<li class="offer__photographer offer__item">Фотограф</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="learn" id="about">
+				<div class="container">
+					<div class="learn-box">
+						<div class="learn-text">
+							<h2 class="learn-title">Чому ви навчитеся</h2>
+							<p class="learn__description">
+								Актуальні знання від визнаних експертів ринку для початківців і практиків
+							</p>
+							<p class="learn__description">
+								На платформі ви можете отримати знання з актуальних тем і затребуваних навичок. Всі курси
+								спрямовані на практику: ми слідкуємо за релевантністю матеріалу та допомагаємо з
+								працевлаштуванням і стажуванням
+							</p>
+						</div>
+						<div class="learn__counters">
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">56</p>
+								<p class="learn__counter-description">Курсів</p>
+							</div>
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">108</p>
+								<p class="learn__counter-description">Кураторів</p>
+							</div>
+							<div class="learn__counter-item">
+								<p class="learn__counter-number">3 723</p>
+								<p class="learn__counter-description">Випускників</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="discover" id="courses">
+				<div class="container">
+					<h2 class="discover__title">Виберіть улюблений курс</h2>
+					<ul class="discover__list">
+						<li><button class="discover__button active" data-category="Popular">Популярні</button></li>
+						<li><button class="discover__button" data-category="Animation">Анімація</button></li>
+						<li><button class="discover__button" data-category="Design">Дизайн</button></li>
+						<li><button class="discover__button" data-category="Illustration">Ілюстрація</button></li>
+						<li><button class="discover__button" data-category="Programming">Програмування</button></li>
+						<li><button class="discover__button" data-category="Photo & Film">Фото та відео</button></li>
+						<li><button class="discover__button" data-category="Marketing">Маркетинг</button></li>
+						<li></li>
+					</ul>
+					<div class="discover__cards"></div>
+				</div>
+			</section>
+			<section class="find-program" id="contact">
+				<div class="container">
+					<div class="find-program-box">
+						<div class="find-program__text">
+							<h2 class="find-program__title">Контактна Інформація</h2>
+							<p class="find-program__description">Ми допоможемо з вибором!</p>
+						</div>
+						<form action="https://fom.in.ua/echo" class="find-program__form">
+							<input
+								class="find-program__input"
+								type="text"
+								name="name"
+								placeholder="Ім'я"
+								autocomplete="name"
+								required
+							/>
+							<input
+								class="find-program__input"
+								type="email"
+								name="email"
+								placeholder="Електронна пошта"
+								autocomplete="email"
+								required
+							/>
+							<p>Вибраний курс</p>
+							<input
+								type="text"
+								name="selected-course"
+								class="find-program__input selected-course"
+								placeholder="Виберіть курс"
+								readonly
+								required
+							/>
+							<button class="find-program__button">Надіслати</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-box">
+					<div class="footer__contacts">
+						<a class="footer__logo logo" href="index_ua.html">
+							<img src="img/footer-logo.svg" alt="logo" />UpDate
+						</a>
+						<a class="footer__link" href="mailto:support@update.com">support@update.com</a>
+						<a class="footer__link" href="tel:+12136771024">+1 (213) 677 10 24</a>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">Курси</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">Анімація</a></li>
+							<li><a class="sitemap__link" href="#">Дизайн</a></li>
+							<li><a class="sitemap__link" href="#">Ілюстрація</a></li>
+							<li><a class="sitemap__link" href="#">Програмування</a></li>
+							<li><a class="sitemap__link" href="#">Фото та відео</a></li>
+							<li><a class="sitemap__link" href="#">Маркетинг</a></li>
+						</ul>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">Інформація</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">Блог</a></li>
+							<li><a class="sitemap__link" href="#">Про нас</a></li>
+							<li><a class="sitemap__link" href="#">Питання та відповіді</a></li>
+						</ul>
+					</div>
+					<div class="sitemap">
+						<h6 class="sitemap__title">Ua</h6>
+						<ul class="sitemap__list">
+							<li><a class="sitemap__link" href="#">Українська</a></li>
+							<li><a class="sitemap__link" href="index.html">Англійська</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<a class="copyright__policy" href="#">Політика конфіденційності</a>
+					<p class="copyright__text">© 2022. Всі права захищені</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
